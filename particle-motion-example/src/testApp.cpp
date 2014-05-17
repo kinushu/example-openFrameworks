@@ -44,7 +44,7 @@ public:
 			{
 				Particle &o = particles[i];
 				ofVec3f dist = (o.pos - p);
-				float r = dist.squareLength();
+				float r = dist.lengthSquared();
 				
 				if (r > 0 && r < 30*30)
 				{
